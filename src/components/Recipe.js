@@ -12,7 +12,7 @@ const Recipe = ({ title, link, calories, image, ingredients}) => {
         ))}
       </ol>
       <p>Calories: {calories}</p>
-      <a href={link}><h3>Link to full recipe</h3></a>
+      <a href={link} target="_blank"><h3>Link to full recipe</h3></a>
       <img className="image" src={image} alt=""/>
     </div>
   );
