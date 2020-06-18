@@ -46,6 +46,7 @@ const App = () => {
         {recipes.map(recipe => (
           <Recipe
             key={recipe.recipe.label}
+            link={recipe.recipe.shareAs}
             title={recipe.recipe.label}
             calories={recipe.recipe.calories.toString().slice(0, 6)}
             image={recipe.recipe.image}

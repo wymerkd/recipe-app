@@ -5,9 +5,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
+  background: #f6f7f9;
   align-items: center;
   min-width: 40%;
+}
+
+.recipe h1 {
+  color: #3f6184;
+}
+
+.recipe-details {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin: 20px;
+  color: #323a45;
 }
 
 .image {
@@ -16,3 +27,4 @@
   height: 200px;
   padding: 30px 0px;
 }
+
