@@ -1,10 +1,14 @@
 import React,{useEffect, useState} from 'react';
 import './App.css';
+import Recipes from './components/Recipes';
 
 const App = () => {
 
   const APP_ID = 'a05e62b8';
   const APP_KEY = '3844746ca92b67be7621b225f08c0f97';
+
+  const [recipes, setRecipes] = useState([]);
+
 
   // useEffect will only run once when page is rendered
   useEffect( () => {
@@ -15,7 +19,7 @@ const App = () => {
   const getRecipes = async () => {
     const response = await fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`);
     const data = await response.json();
-    console.log(data.hits);
+    setRecipes(data.hits);
   }
 
   return (
