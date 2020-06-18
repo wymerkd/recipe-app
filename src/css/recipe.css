@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: green;
+  background: #f6f7f9;
   align-items: center;
   min-width: 40%;
 }
